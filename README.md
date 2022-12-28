@@ -1,1 +1,1 @@
-# Azure-terraform-automation
+# Azure Terraform Automation
