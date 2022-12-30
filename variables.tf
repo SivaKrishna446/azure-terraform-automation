@@ -15,6 +15,6 @@ variable "k8s_cluster_name" {
 
 variable "acr_name" {
     default = "sivaeastus"
-    descrdescription = "The name of the container registry"  
+    description = "The name of the container registry"  
 }
 

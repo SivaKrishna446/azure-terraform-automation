@@ -29,3 +29,16 @@ resource "azurerm_kubernetes_cluster" "k8s" {
       "environment" = "production"
     }
 }
+
+resource "kubernetes_namespace" "ns" {
+   metadata {
+    annotations = {
+      "name" = "hello-world-app"
+    }
+    labels = {
+      "environment" = "production"
+      "github_org"  = "foundation"
+    }
+    name = "foundation-production"
+   }
+}
